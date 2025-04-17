@@ -29,14 +29,13 @@
 }
 
 /* ===================
-===Resting the body=== https://res.cloudinary.com/detakkaio/image/upload/global-express-shipping-logo_rhoqv2.svg
+===Resting the body===
 ======================*/
 body {
-    background-color: whitesmoke;
     line-height: 1.5;
     color: #333;
     margin: 0;
-    padding: 30px;
+    padding: 0;
     max-width: 100%;
     background-color: #f8f9fa;
 }
@@ -104,16 +103,6 @@ ul, ol {
 }
 
 /* =======================
-=== ===
-========================== */
-/* Layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* =======================
         ===Header===
 ========================== */
 header {
@@ -123,7 +112,7 @@ header {
     border-bottom: 5px solid #0066cc;
 }
 
-header .container {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,18 +282,15 @@ tr:hover {
 }
 
 /* =======================
-        === Video intro ===
+    === Video intro ===
 ========================== */
 .shipping-video video {
     height: auto;
     margin: 0 auto;
-    display: relative;
+    display: block;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .shipping-video h3 {
@@ -340,7 +326,7 @@ label {
 }
 
 input, select, textarea {
-    width: 50;
+    width: 320px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -383,17 +369,29 @@ button[type="submit"]:hover {
 /*======================
 ==Terms&condition page==
 ========================*/
+.terms_body {
+    line-height: 2rem;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 h1 {
-    
+    text-align: center;
+    font-size: 2em;
     margin: 20px;
     color: #2c3e50;
 }
+
 h2 {
     color: #3498db;
     margin: 20px;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
+
 .last-updated {
     text-align: center;
     font-style: italic;
@@ -406,69 +404,76 @@ ul {
 }
 
 .contact-info li {
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
     list-style: none;
 }
 
+/*======================
+==privacy page==
+========================*/
+.privacy_body {
+    line-height: 2rem;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0 5px 0;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #3498db;
+    margin: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.last-updated {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.contact-info li {
+    list-style: none;
+}
 
 /*=======================
 === Footer ===
 ==========================*/
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0 20px;
+    color: #000;
 }
 
-footer .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer nav ul {
+footer .footer-content {
     display: block;
-    margin-left: 0;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
 }
 
-footer nav ul li {
-    margin: 0 0 10px 0;
-}
-
-footer nav ul li a {
+footer a {
     color: #a3c2e6;
 }
 
-footer nav ul li a:hover {
-    color: white;
-}
-
-footer .social-links {
-    display: flex;
-    margin-left: 0;
-}
-
-footer .social-links li {
-    margin-right: 15px;
-}
-
-footer li {
-    margin: 0 10px;
-    padding: 10px;
-    list-style: none;
+footer a:hover {
+    color: red;
 }
 
 /*=======================
 === Responsive Design ===
 ==========================*/
-@media (max-width: 300px) and (max-width: 380px) {
+@media screen and (max-width: 300px) and (max-width: 380px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -477,27 +482,22 @@ footer li {
         font-size: 1.2em;
     }
 
-     img {
+    img {
         width: 100%;
         height: auto;
         margin: 0 auto;
         display: block;
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-
     }
 
-     video {
+    video {
         width: 200px;
         height: auto;
-        margin-left: -15px;
-        margin-right: auto;
         margin: 0 auto;
         display: block;
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
     }
 
     .services article {
@@ -505,7 +505,7 @@ footer li {
     }
 }
 
-@media (max-width: 480px) and (max-width: 780px) {
+@media screen and (max-width: 480px) and (max-width: 780px) {
     header h1 {
         font-size: 1.8em;
     }
@@ -513,25 +513,23 @@ footer li {
     header h2 {
         font-size: 1.2em;
     }
-     img {
+
+    img {
         width: 100%;
         height: auto;
         margin: 0 auto;
         display: block;
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-
     }
 
-     video {
+    video {
         width: 300px;
         height: auto;
         margin: 0 auto;
         display: block;
         border-radius: 5px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
     }
 
     .services article {
@@ -539,7 +537,7 @@ footer li {
     }
 }
 
-@media (max-width: 780px)  and (max-width: 1024px) {
+@media screen and (max-width: 780px)  and (max-width: 1024px) {
     header .container {
         text-align: center;
     }
@@ -565,6 +563,30 @@ footer li {
     .tracking form {
         flex-direction: column;
     }
+}
+
+/*=====================
+===Button to go up====
+======================*/
+
+.top-btn button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-btn button:hover {
+    background-color: #004499;
+    color: white;
 }
 
 /*=======================
