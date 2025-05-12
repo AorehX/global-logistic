@@ -81,12 +81,12 @@ h2 {
     margin-top: 5px;
 }
 
-.h2-selector, .about-global-shipping {
+.h2-selector,
+.about-global-shipping {
     text-align: center;
     margin-top: -25px;
     margin-bottom: -25px;
 }
-
 
 h3 {
     font-size: 1.4em;
@@ -192,6 +192,9 @@ section {
 
 .home img {
     display: block;
+    max-width: 100%;
+    position: relative;
+    height: auto;
     margin: 20px auto;
 }
 
@@ -284,10 +287,21 @@ tr:hover {
 /* =======================
     === Video intro ===
 ========================== */
+.shipping-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    }
+
 .shipping-video video {
-    height: auto;
-    margin: 0 auto;
     display: block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -326,7 +340,7 @@ label {
 }
 
 input, select, textarea {
-    width: 320px;
+    width: 210px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
